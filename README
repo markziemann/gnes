@@ -1,0 +1,49 @@
+Gene Name Error Scanner - by Mark Ziemann Sept/2016
+
+Excel autocorrect errors are common in supplementary files of genomics papers*. This 
+webservice allows users to upload and check files for such errors. Users can optionally
+enter an email address and receive a report in PDF format. 
+
+The directory structure is as follows:
+
+.
+├── code
+│   ├── genelists
+│   │   ├── Athaliana_ensgenesV82_2015-11-25.txt
+│   │   ├── Athaliana_genes
+│   │   ├── Celegans_genes
+│   │   ├── _dir
+│   │   ├── Dmelanogaster_ensgenesV82_2015-11-25.txt
+│   │   ├── Dmelanogaster_genes
+│   │   ├── Drerio_genes
+│   │   ├── Ecoli_genes
+│   │   ├── genenames.sh
+│   │   ├── Ggallus_ensgenesV82_2015-11-25.txt
+│   │   ├── Ggallus_genes
+│   │   ├── Hsapiens_ensgenesV82_2015-11-25.txt
+│   │   ├── Hsapiens_genes
+│   │   ├── Mmusculus_genes
+│   │   ├── Osativa_genes
+│   │   ├── Rnorvegicus_ensgenesV82_2015-11-25.txt
+│   │   ├── Rnorvegicus_genes
+│   │   ├── Scerevisiae_ensgenesV82_2015-11-25.txt
+│   │   └── Scerevisiae_genes
+│   └── scan_uploaded_files.sh
+├── gnes.html
+├── gnes.php
+├── install.sh
+└── README
+
+install.sh 	is a bashscript to get all the dependancies worked out and the php/apache
+		working smoothly
+
+gnes.html 	is the basic html form.
+
+gnes.php 	is the upload script.
+
+code		the directory where the scanning takes place.
+
+scan_uploaded_files.sh is the shell script used to scan the Excel files.
+
+genelists	these are the genelists downloaded from Ensembl Biomart.
+
